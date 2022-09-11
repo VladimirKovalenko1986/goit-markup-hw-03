@@ -35,7 +35,7 @@ ul {
 }
 
 * {
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -272,6 +272,7 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   max-width: 322px;
+  margin-bottom: 4px;
 }
 
 .pictures-text {
