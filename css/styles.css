@@ -1,15 +1,14 @@
-
 :root {
   --color-logo-text: #000000;
   --color-primery-text: #757575;
-  --color-text-logonav: #2196F3;
+  --color-text-logonav: #2196f3;
   --color-secondery-text: #212121;
-  --color-hero-title: #FFFFFF;
+  --color-hero-title: #ffffff;
   --color-footer-text: rgba(255, 255, 255, 0.6);
-  --color-bgn-hero: #2F303A;
-  --color-bgn-btn: #F5F4FA;
+  --color-bgn-hero: #2f303a;
+  --color-bgn-btn: #f5f4fa;
+  --color-border-header: #ececec;
 }
-
 
 body {
   font-family: "Roboto", sans-serif;
@@ -17,6 +16,25 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+* {
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -27,7 +45,7 @@ body {
   text-decoration: none;
 }
 
-.link:hover, 
+.link:hover,
 .link:focus {
   color: var(--color-text-logonav);
 }
@@ -44,6 +62,13 @@ body {
   color: var(--color-text-logonav);
 }
 
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -58,6 +83,20 @@ body {
 }
 
 /* Header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--color-border-header);
+}
+
+.conteiner {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   color: var(--color-logo-text);
@@ -87,6 +126,8 @@ body {
 .hero {
   background-color: var(--color-bgn-hero);
   text-align: center;
+  padding: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -96,20 +137,27 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 auto 30px;
 }
 
 .hero-btn {
-  font-family: inherit;
   color: var(--color-hero-title);
   background-color: var(--color-text-logonav);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-  cursor: pointer;
+  min-width: 216px;
+  padding: 10px 32px;
 }
 
 /* Function */
+
+.function {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
 
 .function-item-title {
   color: var(--color-secondery-text);
@@ -117,20 +165,45 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 /* Occupation, Team */
 
-.main-title {
+.ocupation {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.ocupation-title,
+.team-title {
   color: var(--color-secondery-text);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .team {
   background-color: var(--color-bgn-btn);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.conteiner-team {
+  background-color: var(--color-hero-title);
+  max-width: 270px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  border: 1px solid var(--color-border-header);
+  border-top: none;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item-img {
+  display: block;
 }
 
 .team-item-tetle {
@@ -138,6 +211,7 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  margin: 10px;
 }
 
 .team-item-text {
@@ -150,13 +224,14 @@ body {
 /* Hero */
 
 .function-btn {
-  font-family: inherit;
   color: var(--color-secondery-text);
   background-color: var(--color-bgn-btn);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: inherit;
+  min-width: 73px;
+  padding: 6px 22px;
 }
 
 .function-btn:hover,
@@ -187,6 +262,8 @@ body {
 
 .footer {
   background-color: var(--color-bgn-hero);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -195,21 +272,28 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .footer-address {
   font-style: normal;
+  max-width: 231px;
 }
 
 .footer-link {
   color: var(--color-hero-title);
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .footer-contact {
   color: var(--color-footer-text);
+  display: block;
+  margin-bottom: 9px;
 }
 
-.footer-contact:hover, 
+.footer-contact:hover,
 .footer-contact:focus {
   color: var(--color-hero-title);
 }
