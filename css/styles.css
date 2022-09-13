@@ -19,6 +19,14 @@ body {
   letter-spacing: 0.03em;
 }
 
+.conteiner {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
+}
+
 h1,
 h2,
 h3,
@@ -35,7 +43,7 @@ ul {
 }
 
 * {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .list {
@@ -91,11 +99,29 @@ ul {
   border-bottom: 1px solid var(--color-border-header);
 }
 
-.conteiner {
-  width: 1200px;
-  margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:first-child) {
+  margin-left: 50px;
+}
+.header-list-contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-wrap {
 }
 
 .header-logo {
@@ -104,6 +130,8 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  display: block;
+  margin-right: 93px;
 }
 
 .header-link {
@@ -118,6 +146,10 @@ ul {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+}
+
+.header-item-contact:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* Main index.html */
